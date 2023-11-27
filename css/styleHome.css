@@ -92,3 +92,97 @@ label{
     background-color: #100d2d;
 }
 
+@media screen and (max-width: 1338px) {
+    .title h2{
+        font-size: 25px;
+    }
+
+    .container_1 img{
+        width: 330px;
+        height: 230px;
+    }
+
+    .container_2 img{
+        width: 330px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 1093px) {
+    .title h2{
+        font-size: 18px;
+    }
+
+    .container_1 img{
+        width: 270px;
+        height: 200px;
+    }
+
+    .container_2 img{
+        width: 270px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 909px) {
+    .title h2{
+        font-size: 18px;
+    }
+
+    .container_1 img{
+        width: 230px;
+        height: 200px;
+    }
+
+    .container_2 img{
+        width: 230px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title h2{
+        font-size: 14px;
+    }
+
+    .container_1 img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .container_2 img{
+        width: 180px;
+        height: 180px;    
+    }
+
+    label{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .title h2{
+        font-size: 14px;
+    }
+
+    .container_1 img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .container_2 img{
+        width: 130px;
+        height: 130px;    
+    }
+
+    label{
+        font-size: 8px;
+    }
+
+    button{
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
+    }
+}
+

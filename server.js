@@ -7,10 +7,10 @@ const cors = require('cors'); // Middleware para lidar com Compartilhamento de R
 const app = express();
 
 // Conectando-se ao banco de dados MySQL usando Sequelize
-const sequelize = new Sequelize('hotel', 'root', '', {
+const sequelize = new Sequelize('hotel', 'root', 'admin', {
     dialect: 'mysql',
     host: '127.0.0.1',
-    port: '3307',
+    port: '3306',
 });
 
 const User = sequelize.define('User', {
@@ -39,7 +39,7 @@ const Reserva = sequelize.define('Reserva', {
     ]
 });
 
-// Sincronizando as tabelas com o banco de dados ( e criando tabelas se não existirem)
+// Sincronizando as tabelas com o banco de dados (e criando tabelas se não existirem)
 sequelize.sync({ alter: true });
 
 // Configuração de middlewares

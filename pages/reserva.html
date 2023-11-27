@@ -77,12 +77,14 @@
             window.reservas = [];
         });
 
+        // abre o modal
         function openEditModal() {
             const modalElement = document.getElementById('editModal');
             console.log('Elemento do Modal:', modalElement);
             document.getElementById('editModal').style.display = 'block';
         }
 
+        // fecha o modal
         function closeEditModal() {
             document.getElementById('editModal').style.display = 'none';
         }
@@ -91,41 +93,6 @@
         const apartamento = urlParams.get('apartamento');
         document.getElementById('apartamento').value = apartamento;
 
-        async function submitForm() {
-            event.preventDefault();
-            const numHospedes = document.getElementById('numHospedes').value;
-            const dataEntrada = document.getElementById('dataEntrada').value;
-            const dataSaida = document.getElementById('dataSaida').value;
-
-            if (!numHospedes || !dataEntrada || !dataSaida) {
-                alert('Por favor, preencha todos os campos obrigatórios.');
-                return;
-            }
-
-            const reservaData = {
-                apartamento,
-                numHospedes,
-                dataEntrada,
-                dataSaida
-            };
-
-            const response = await fetch('http://localhost:3000/reservas', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'secret-token'
-                },
-                body: JSON.stringify(reservaData)
-            });
-
-            window.reservas = await response.json();
-            alert(result.message);
-
-            if (response.status === 201) {
-                // Se a reserva foi criada com sucesso, exibe a tabela CRUD
-                displayCrudTable();
-            }
-        }
 
         async function displayCrudTable() {
             const response = await fetch('http://localhost:3000/reservas', {
@@ -182,8 +149,8 @@
         }
 
 
-
-        async function submitForm() {
+        
+        async function submitForm() {  //Função do formulario de edição
             event.preventDefault();
             const numHospedes = document.getElementById('numHospedes').value;
             const dataEntrada = document.getElementById('dataEntrada').value;

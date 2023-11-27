@@ -81,3 +81,133 @@ main{
     padding: 60px;
     box-shadow: -8px 14px 12px 1px black;
 }
+
+@media screen and (max-width: 737px) {
+    .title h2{
+        font-size: 25px;
+        margin-bottom: 10rem;
+    }
+
+    main{
+        min-height: 70vh;
+    }
+    
+}
+
+@media screen and (max-width: 643px) {
+    .title h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .title h2{
+        font-size: 18px;
+        margin-bottom: 15rem;
+    }
+
+    input{
+        height: 35px;
+        margin-bottom: 3rem;
+    }
+
+    label{
+        font-size: small;
+        
+    }
+
+    button{
+        height: 50px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .usersList h2{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .usersList h2{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .title h2{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .usersList h2{
+        font-size: 8px;
+    }
+
+    input{
+        height: 30px;
+    }
+
+    label{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (max-width: 401px){
+    .title h2{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 371px){
+    .usersList h2{
+        font-size: 6px;
+    }
+
+    button{
+        height: 25px;
+        font-size: 7.5px;
+    }
+}
+
+@media screen and (max-width: 365px){
+    .title h2{
+        font-size: 9.7px;
+    }
+
+    input{
+        height: 27px;
+        margin-bottom: 18px;
+    }
+
+    main{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 357px){
+    .title h2{
+        font-size: 9.5px;
+    }
+}
+
+@media screen and (max-width: 357px){
+    .title h2{
+        font-size: 9px;
+    }
+
+    input{
+        height: 25px;
+        margin-bottom: 15px;
+    }
+
+    main{
+        padding: 30px;
+    }
+}
+
+
+
+ 
