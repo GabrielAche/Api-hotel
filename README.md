@@ -3,6 +3,7 @@ Api-hotel
 Para começar a api, é preciso usar esses comandos no terminal:
   - npm install express
   - node server.js
+    
 Também é necessário configurar o banco de dados no script server.js, conforme o exemplo abaixo.
 
 // Conectando-se ao banco de dados MySQL usando Sequelize
